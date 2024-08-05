@@ -1,15 +1,22 @@
 module.exports = {
   "extends": [
+    "plugin:@nx/react-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "next",
     "next/core-web-vitals",
-    "./eslint/node.js",
+    'plugin:perfectionist/recommended-natural-legacy',
+    "./tools/eslint/web.js"
   ],
   "ignorePatterns": [
-    "**/*"
+    "!**/*",
+    ".next/**/*",
   ],
   "plugins": [
     "@nx",
     "@stylistic",
-    '@stylistic/migrate'
+    '@stylistic/migrate',
+    '@typescript-eslint',
+    'perfectionist',
   ],
   "overrides": [
     {
@@ -17,12 +24,13 @@ module.exports = {
         "*.ts",
         "*.tsx",
         "*.js",
-        "*.jsx"
+        "*.jsx",
       ],
       "rules": {
-        "@stylistic/migrate/migrate-js": "error",
-        "@stylistic/migrate/migrate-ts": "error",
-        "prettier/prettier": 0,
+        "@next/next/no-html-link-for-pages": [
+          "error",
+          "apps/site/pages"
+        ],
         "@stylistic/jsx-sort-props": "error",
         "@stylistic/jsx-max-props-per-line": [
           "error", {
@@ -30,31 +38,7 @@ module.exports = {
             "when": "always"
           }
         ],
-        "@stylistic/jsx-first-prop-new-line": [
-          "error",
-          "multiline"
-        ]
-      }
-    },
-    {
-      "files": [
-        "*.ts",
-        "*.tsx"
-      ],
-      "extends": [
-        "plugin:@nx/typescript",
-        "./eslint/shared/typescript-analysis.js",
-        "plugin:typescript-sort-keys/recommended"
-      ],
-      "parserOptions": {
-        "project": [
-          "./tsconfig.*?.json"
-        ]
       },
-      "plugins": [
-        "typescript-sort-keys"
-      ],
-      "rules": {}
     },
     {
       "files": [
@@ -65,6 +49,17 @@ module.exports = {
         "plugin:@nx/javascript"
       ],
       "rules": {}
-    }
-  ]
+    },
+    {
+      "files": [
+        "*.spec.ts",
+        "*.spec.tsx",
+        "*.spec.js",
+        "*.spec.jsx",
+      ],
+      "env": {
+        "jest": true,
+      },
+    },
+  ],
 }

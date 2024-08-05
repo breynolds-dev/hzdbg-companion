@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { jsExtensions } = require("./extensions");
 
 module.exports = {
@@ -21,7 +22,6 @@ module.exports = {
     require: false,
   },
   plugins: [
-    "import",
     "node",
   ],
   rules: {
@@ -53,7 +53,7 @@ module.exports = {
     "@stylistic/semi-style": ["warn", "last"],
     "@stylistic/space-before-blocks": ["warn", "always"],
     "@stylistic/space-before-function-paren": ["warn", { anonymous: "never", named: "never" }],
-    "@stylistic/space-in-parens": ["warn", "never"],
+    "@stylistic/space-in-parens": ["warn", "always"],
     "@stylistic/space-infix-ops": "warn",
     "@stylistic/switch-colon-spacing": ["warn", { before: false, after: true }],
     "@stylistic/template-curly-spacing": ["warn", "never"],
@@ -138,50 +138,12 @@ module.exports = {
     "unicode-bom": ["warn", "never"],
     "use-isnan": "error",
     "valid-typeof": "error",
-    'object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
+    "@stylistic/object-property-newline": ["error", { allowAllPropertiesOnSameLine: true }],
     curly: ["warn", "all"],
     eqeqeq: ["warn", "smart"],
     radix: "warn",
     yoda: ["warn", "never", { exceptRange: true }],
-
-    "import/default": "off",
-    "import/export": "error",
-    "import/first": "warn",
-    "import/namespace": ["error", { allowComputed: true }],
-    "import/no-duplicates": "error",
-    "import/order": [
-      "warn",
-      {
-        groups: [["builtin", "external"], "internal", ["parent", "index", "sibling"]],
-        "newlines-between": "always",
-        alphabetize: {
-          order: "asc",
-        },
-      },
-    ],
-
     "node/handle-callback-err": ["warn", "^(e|err|error|.+GlobalError)$"],
     "node/no-new-require": "warn",
   },
-  settings: {
-    "import/extensions": jsExtensions,
-    "import/ignore": [
-      // react-native's main module is Flow, not JavaScript, and raises parse errors. Additionally,
-      // several other react-native-related packages still publish Flow code as their main source.
-      "node_modules[\\\\/]+@?react-native",
-    ],
-    "import/resolver": {
-      node: {
-        extensions: jsExtensions,
-      },
-    },
-  },
-  overrides: [
-    {
-      files: ["*.d.ts"],
-      rules: {
-        "import/order": "off",
-      },
-    },
-  ],
 };
