@@ -1,9 +1,9 @@
 module.exports = {
   "extends": [
-    "plugin:@nx/react-typescript",
-    "plugin:@typescript-eslint/recommended",
     "next",
     "next/core-web-vitals",
+    "plugin:@nx/react-typescript",
+    "plugin:@typescript-eslint/recommended",
     'plugin:perfectionist/recommended-natural-legacy',
     "./tools/eslint/web.js"
   ],
@@ -20,6 +20,9 @@ module.exports = {
   ],
   "overrides": [
     {
+      "extends": [
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
       "files": [
         "*.ts",
         "*.tsx",
@@ -46,7 +49,7 @@ module.exports = {
         "*.jsx"
       ],
       "extends": [
-        "plugin:@nx/javascript"
+        "plugin:@nx/javascript",
       ],
       "rules": {}
     },
