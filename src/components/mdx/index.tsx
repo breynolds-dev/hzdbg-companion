@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-export const a = Link
-export { Button } from '@/components/button'
+export const a = Link;
+export { Button } from "@/components/button";

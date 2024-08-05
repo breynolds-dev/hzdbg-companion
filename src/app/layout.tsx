@@ -1,21 +1,24 @@
 import type { Metadata } from "next";
 
-import '@/styles/tailwind.css'
+import "@/styles/tailwind.css";
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - HZDBG Companion App',
-    default: 'Horizon Zero Dawn: The Board Game - Companion App',
+    default: "Horizon Zero Dawn: The Board Game - Companion App",
+    template: "%s - HZDBG Companion App",
   },
-}
+};
 
-export default function RootLayout({
+export default function RootLayout( {
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}> ) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
+    <html
+      className="h-full"
+      lang="en"
+      suppressHydrationWarning>
       <body className="flex min-h-full bg-white antialiased dark:bg-zinc-900">
         <div className="w-full">
           {children}
