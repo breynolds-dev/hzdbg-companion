@@ -25,7 +25,7 @@ module.exports = {
     "node",
   ],
   rules: {
-    "@stylistic/array-bracket-spacing": ["warn", "never"],
+    "@stylistic/array-bracket-spacing": ["warn", "always"],
     "@stylistic/arrow-spacing": ["warn", { before: true, after: true }],
     "@stylistic/block-spacing": ["warn", "always"],
     "@stylistic/comma-dangle": ["warn", "always-multiline"],
@@ -38,6 +38,8 @@ module.exports = {
     "@stylistic/generator-star-spacing": ["warn", "after"],
     "@stylistic/indent": ["error", 2],
     "@stylistic/jsx-quotes": ["error", "prefer-double"],
+    "@stylistic/jsx-first-prop-new-line": "error",
+    "@stylistic/jsx-closing-bracket-location": ["warn", "tag-aligned"],
     "@stylistic/new-parens": "warn",
     "@stylistic/no-extra-semi": "warn",
     "@stylistic/no-floating-decimal": "warn",
