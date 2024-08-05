@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import "@/styles/tailwind.css";
 
+import { Layout } from "../components/layout";
+
 export const metadata: Metadata = {
   title: {
     default: "Horizon Zero Dawn: The Board Game - Companion App",
@@ -21,7 +23,9 @@ export default function RootLayout( {
       suppressHydrationWarning>
       <body className="flex min-h-full bg-white antialiased dark:bg-zinc-900">
         <div className="w-full">
-          {children}
+          <Layout>
+            {children}
+          </Layout>
         </div>
       </body>
     </html>
