@@ -1,0 +1,91 @@
+{
+  "config": {
+    "commitizenEmoji": {
+      "conventionalFormat": true,
+      "issuesPrefix": "https://github.com/breynolds-dev/gotham-city-chronicles-companion/issues/",
+      "questions": {
+        "body": "Provide a commit description:",
+        "breakingBody": "Specify key features of a BREAKING CHANGE:",
+        "issues": "Issue ID",
+        "scope": "Specify a scope:",
+        "subject": "Provide a commit title:",
+        "type": "Select the type of change you're committing:"
+      },
+      "replaceTypes": true,
+      "skipQuestions": [
+        "scope"
+      ],
+      "subjectMaxLength": 200,
+      "symbols": false,
+      "types": [
+        {
+          "code": ":sparkles:",
+          "description": "Introduce new features.",
+          "emoji": "✨",
+          "name": "feat"
+        },
+        {
+          "code": ":bug:",
+          "description": "Fix a bug.",
+          "emoji": "🐛",
+          "name": "fix"
+        },
+        {
+          "code": ":zap:",
+          "description": "A performance improvement on any part of the application.",
+          "emoji": "⚡️",
+          "name": "perf"
+        },
+        {
+          "code": ":recycle:",
+          "description": "Refactoring any component or file.",
+          "emoji": "♻️",
+          "name": "refactor"
+        },
+        {
+          "code": ":art:",
+          "description": "Add or update the UI and style files.",
+          "emoji": "🎨",
+          "name": "style"
+        },
+        {
+          "code": ":memo:",
+          "description": "Add or update documentation.",
+          "emoji": "📝",
+          "name": "docs"
+        },
+        {
+          "code": ":building_construction:",
+          "description": "Build system or architectural changes.",
+          "emoji": "🏗️",
+          "name": "build"
+        },
+        {
+          "code": ":rewind:",
+          "description": "Reverts previous changes",
+          "emoji": "⏪️",
+          "name": "revert"
+        },
+        {
+          "code": ":alembic:",
+          "description": "Testing improved with new or fixed tests. (DOES NOT BUMP VERSION OR TRIGGER NEW RELEASE)",
+          "emoji": "⚗️",
+          "name": "test"
+        },
+        {
+          "code": ":construction_worker:",
+          "description": "CI config files and scripts. (DOES NOT BUMP VERSION OR TRIGGER NEW RELEASE)",
+          "emoji": "👷",
+          "name": "ci"
+        },
+        {
+          "code": ":hammer:",
+          "description": "Changes that don't fit into other categories. (DOES NOT BUMP VERSION OR TRIGGER NEW RELEASE)",
+          "emoji": "🔨",
+          "name": "chore"
+        }
+      ]
+    }
+  },
+  "path": "./node_modules/commitizen-emoji"
+}

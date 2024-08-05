@@ -1,0 +1,6 @@
+export BRANCH_NAME=$(git branch | grep '*' | sed 's/* //')
+
+if [ $BRANCH_NAME != '(no branch)' ]
+then
+  exec < /dev/tty && yarn cz --hook || true
+fi
