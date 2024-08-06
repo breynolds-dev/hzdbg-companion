@@ -7,7 +7,8 @@ function ArrowIcon( props: React.ComponentPropsWithoutRef<"svg"> ) {
       aria-hidden="true"
       fill="none"
       viewBox="0 0 20 20"
-      {...props}>
+      {...props}
+    >
       <path
         d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9"
         stroke="currentColor"
@@ -70,7 +71,8 @@ export function Button( {
     return (
       <button
         className={className}
-        {...props}>
+        {...props}
+      >
         {inner}
       </button>
     );
@@ -79,7 +81,8 @@ export function Button( {
   return (
     <Link
       className={className}
-      {...props}>
+      {...props}
+    >
       {inner}
     </Link>
   );

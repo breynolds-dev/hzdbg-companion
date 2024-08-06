@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/tailwind.css";
 
 import { Layout } from "../components/layout";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: {
@@ -20,13 +21,16 @@ export default function RootLayout( {
     <html
       className="h-full"
       lang="en"
-      suppressHydrationWarning>
+      suppressHydrationWarning
+    >
       <body className="flex min-h-full bg-white antialiased dark:bg-zinc-900">
-        <div className="w-full">
-          <Layout>
-            {children}
-          </Layout>
-        </div>
+        <Providers>
+          <div className="w-full">
+            <Layout>
+              {children}
+            </Layout>
+          </div>
+        </Providers>
       </body>
     </html>
   );
