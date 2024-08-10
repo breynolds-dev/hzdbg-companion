@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-
+import { Providers } from "@/app/providers";
+import { Layout } from "@/components";
+import { type Section } from "@/context";
 import "@/styles/tailwind.css";
-
-import { Layout } from "../components/layout";
-import { Providers } from "./providers";
+import glob from "fast-glob";
+import { type Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
@@ -12,11 +12,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout( {
+export default async function RootLayout( {
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}> ) {
+}: {
+  children: React.ReactNode
+} ) {
+  const pages = await glob( "**/*.mdx", { cwd: "src/app" } );
+  const allSectionsEntries = ( await Promise.all(
+    pages.map( async ( filename ) => [
+      "/" + filename.replace( /(^|\/)page\.mdx$/, "" ),
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      ( await import( `./${filename}` ) ).sections,
+    ] ),
+  ) ) as [string, Section[]][];
+  const allSections = Object.fromEntries( allSectionsEntries );
+
   return (
     <html
       className="h-full"
@@ -26,9 +36,7 @@ export default function RootLayout( {
       <body className="flex min-h-full bg-white antialiased dark:bg-zinc-900">
         <Providers>
           <div className="w-full">
-            <Layout>
-              {children}
-            </Layout>
+            <Layout allSections={allSections}>{children}</Layout>
           </div>
         </Providers>
       </body>

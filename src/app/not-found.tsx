@@ -1,14 +1,12 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-
-import { Button } from "../components/button";
+import {
+  Button,
+  HeroPattern,
+} from "@/components";
 
 export default function NotFound() {
-  const router = useRouter();
-
   return (
     <>
+      <HeroPattern />
       <div className="mx-auto flex h-full max-w-xl flex-col items-center justify-center py-16 text-center">
         <p className="text-sm font-semibold text-zinc-900 dark:text-white">
           404
@@ -22,7 +20,7 @@ export default function NotFound() {
         <Button
           arrow="right"
           className="mt-8"
-          onClick={() => router.back()}
+          href="/"
         >
           Back to docs
         </Button>
