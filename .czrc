@@ -2,7 +2,7 @@
   "config": {
     "commitizenEmoji": {
       "conventionalFormat": true,
-      "issuesPrefix": "https://github.com/breynolds-dev/gotham-city-chronicles-companion/issues/",
+      "issuesPrefix": "https://github.com/breynolds-dev/hzdbg-companion/issues/",
       "questions": {
         "body": "Provide a commit description:",
         "breakingBody": "Specify key features of a BREAKING CHANGE:",
