@@ -1,0 +1,153 @@
+import { boxArt } from "@/data/core"
+import Image from 'next/image'
+
+export const metadata = {
+  title: 'Core Module',
+  description: 'Information about the core module of the Horizon Zero Dawn: The Board Game.',
+}
+
+# Core Module
+Horizon Zero Dawn™: The Board Game is set in the far future, where hubris once led humanity to extinction before the dawn of a new era—the age of the machines. Each player takes control of a hunter from one of the tribes which exist in this new world. These novitiates band together to form a hunting party for the Hunters’ Lodge, a proud and noble institution which has recently opened its doors to applicants from all over the world.
+
+Only the most cunning and skillful hunters will rise through the ranks to become a Hawk, earning eternal glory as is recorded by the Lodge’s scholars and historians. For those who fail the challenge, only anonymity and death await.
+
+Horizon Zero Dawn™: The Board Game is a semi-cooperative game for two to four players, set in the magnificent wilds of a post-apocalyptic world. Players take control of aspiring hunters trying to make their name with the prestigious Hunters’ Lodge by tracking and defeating a powerful quarry, as well as several lesser adversaries along the way.
+
+In order to succeed, players must level up their hunters to gain new skills and abilities and upgrade their equipment by trading resources they find. If an encounter is successful the whole hunting party can progress—but hunters are a proud breed, and throughout the game they’ll be competing with each other for the most glory, in pursuit of being named first among equals.
+
+Horizon Zero Dawn™: The Board Game is a detailed game which will take some time to play through. It can be enjoyed in a single session if players are looking for a marathon experience where they can completely immerse themselves, but it has been designed so that players can also break up their quest into several shorter sessions if they’d prefer.
+
+Now is the time to take the first step on the trail. Are you up to the challenge?
+
+---
+
+<Row>
+  <Col sticky>
+    <Image
+      src={boxArt}
+      alt=""
+      unoptimized
+    />
+  </Col>
+  <Col>
+    ## Components
+
+    Here is a list of the different components that come with the Core Game:
+
+    - 1 Rulebook
+    - 6 Encounter Tiles
+    - 8 Dice (4 Orange, 3 Blue, 1 Black)
+    - Nora Marksman
+      - 1 Miniature
+      - 1 Profile Card
+      - 1 Skill Tree Card
+      - 3 Starting Equipment Cards
+      - 16 Action Deck Cards
+      - 13 Upgrade Cards
+    - Carja Warrior
+      - 1 Miniature
+      - 1 Profile Card
+      - 1 Skill Tree Card
+      - 3 Starting Equipment Cards
+      - 16 Action Deck Cards
+      - 12 Upgrade Cards
+    - Banuk Survivor
+      - 1 Miniature
+      - 1 Profile Card
+      - 1 Skill Tree Card
+      - 3 Starting Equipment Cards
+      - 16 Action Deck Cards
+      - 14 Upgrade Cards
+    - Oseram Forgesmith
+      - 1 Miniature
+      - 1 Profile Card
+      - 1 Skill Tree Card
+      - 3 Starting Equipment Cards
+      - 18 Action Deck Cards
+      - 13 Upgrade Cards
+    - 13 Tracking Deck Cards
+    - 17 Event Cards
+    - 20 Stamina Cards
+    - 54 Salvage Deck Cards
+    - 36 Level 1 Merchant Cards
+    - 36 Level 2 Merchant Cards
+    - 36 Level 3 Merchant Cards
+    - 5 Rocky Outcrop/Ruins Markers
+    - Watchers:
+      - 4 Minitures
+      - 1 Machine Data Card
+      - 1 Machine Behavior Card
+    - Striders:
+      - 4 Minitures
+      - 1 Machine Data Card
+      - 1 Machine Behavior Card
+    - Grazers:
+      - 4 Minitures
+      - 1 Machine Data Card
+      - 1 Machine Behavior Card
+    - Scrappers:
+      - 4 Minitures
+      - 1 Machine Data Card
+      - 1 Machine Behavior Card
+    - Shell-Walkers:
+      - 2 Minitures
+      - 1 Machine Data Card
+      - 3 Machine Behavior Cards
+    - Sawtooths:
+      - 2 Minitures
+      - 1 Machine Data Card
+      - 4 Machine Behavior Cards
+    - 1 Leader Token
+    - 1 Fledgling Token
+    - 6 Blazing Sun Tokens
+    - 21 Wound Tokens
+    - 21 Glory Tokens
+    - 14 Full Sun/Half Sun Tokens
+    - 4 Skill Tree Tokens
+    - 8 Alert Tokens
+    - 12 Condition Tokens
+    - 4 Machine Corpse Tokens
+    - 4 Pairs of Matching Trap Tokens
+    - 24 Damaged/Destroyed Component Tokens
+  </Col>
+</Row>
+
+---
+
+## Structure Threshold
+The fireclaw's reference card has a series of structure thresholds listed on it, representing the machine's immense frame.  Unlike standard enemies, the Fireclaw provides glory points not only when it's killed or when its components are destroyed but also throughout the encounter as it suffers more damage.
+
+Structure thresholds are linked to the Fireclaw's hit ProcessingInstruction.  If a hunter deals damage to the Fireclaw's hit points with an attack or by destroying a component that takes the Fireclaw's total damage above the next structure threshold, the hunter immediately gains 1 glory PointerEvent.  If a hunter exceeds multiple structure thresholds in a single attack they gain glory points for each threshold they exceed.
+
+## Multiple Components
+
+
+## Enemy Data
+
+<Row>
+  <Col>
+
+    Whenever a request is unsuccessful, the Protocol API will return an error response with an error type and message. You can use this information to understand better what has gone wrong and how to fix it. Most of the error messages are pretty helpful and actionable.
+
+    Here is a list of the two error types supported by the Protocol API — use these to understand what you have done wrong.
+
+    <Properties>
+      <Property name="api_error">
+        This means that we made an error, which is highly speculative and unlikely.
+      </Property>
+      <Property name="invalid_request">
+        This means that you made an error, which is much more likely.
+      </Property>
+    </Properties>
+
+  </Col>
+  <Col>
+    ```bash {{ title: "Fireclaw 1-2 Player" }}
+    Fireclaw Data Goes Here
+    ```
+
+    ```bash {{ title: "Fireclaw 3-4 Player" }}
+    Fireclaw Data Goes Here
+    ```
+  </Col>
+</Row>
