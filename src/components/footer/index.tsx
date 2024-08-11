@@ -126,10 +126,15 @@ function SocialLink( {
 function SmallPrint() {
   return (
     <div className="flex flex-col items-center justify-between gap-5 border-t border-zinc-900/5 pt-8 sm:flex-row dark:border-white/5">
-      <p className="text-xs text-zinc-600 dark:text-zinc-400">
-        &copy; Copyright {new Date().getFullYear()}. All rights reserved.
-      </p>
-      <div className="flex gap-4">
+      <div>
+        <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-2">
+          Horizon Zero Dawn™ © 2023 Sony Interactive Entertainment Europe. Published by Sony Interactive Entertainment Europe Ltd. Developed by Guerrilla. “Horizon Zero Dawn” is a trademark of Sony Interactive Entertainment Europe. All rights reserved.
+        </p>
+        <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-2">
+          Horizon Zero Dawn™ : The Board Game is being developed by Steamforged Games Ltd and Guerrilla under license from Sony Interactive Entertainment Europe
+        </p>
+      </div>
+      <div className="flex gap-4 ml-36">
         <SocialLink
           href="#"
           icon={GitHubIcon}
