@@ -15,6 +15,11 @@ const withMDX = nextMDX( {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/hzdbg-companion",
+  images: {
+    unoptimized: true,
+  },
+  output: "export",
   pageExtensions: [
     "js",
     "jsx",
