@@ -1,11 +1,11 @@
 "use client";
 
 import { useIsInsideMobileNavigation } from "@/context";
+import { useSectionStore } from "@/context";
 import { useInitialValue } from "@/hooks";
 import { remToPx } from "@/lib/remToPx";
 import { motion, useIsPresent } from "framer-motion";
 
-import { useSectionStore } from "../../../context";
 import { NavGroup } from "../constants";
 
 export const VisibleSectionHighlight = ( {

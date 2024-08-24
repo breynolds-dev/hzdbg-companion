@@ -1,11 +1,8 @@
 "use client";
 
-import {
-  Logo,
-  MobileSearch,
-  Search,
-  ThemeToggle,
-} from "@/components";
+import { Logo } from "@/components/Logo";
+import { MobileSearch, Search } from "@/components/Search";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   MobileNavigationProvider,
   useIsInsideMobileNavigation,

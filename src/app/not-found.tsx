@@ -1,7 +1,5 @@
-import {
-  Button,
-  HeroPattern,
-} from "@/components";
+import { Button } from "@/components/Button";
+import { HeroPattern } from "@/components/HeroPattern";
 
 export default function NotFound() {
   return (

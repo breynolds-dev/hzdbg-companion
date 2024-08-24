@@ -1,17 +1,16 @@
-import {
-  Heading,
-  Prose,
-} from "@/components";
 import clsx from "clsx";
 import Link from "next/link";
 
 export const a = Link;
+export * from "@/components/Button";
+import { Heading } from "@/components/Heading";
+import { Prose } from "@/components/Prose";
 export {
-  Button,
   Code as code,
   CodeGroup,
   Pre as pre,
-} from "@/components";
+} from "@/components/Code";
+
 
 export function wrapper( { children }: { children: React.ReactNode } ) {
   return (

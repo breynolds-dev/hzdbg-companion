@@ -1,5 +1,5 @@
 import { Providers } from "@/app/providers";
-import { Layout } from "@/components";
+import { Layout } from "@/components/Layout";
 import { type Section } from "@/context";
 import "@/styles/tailwind.css";
 import glob from "fast-glob";

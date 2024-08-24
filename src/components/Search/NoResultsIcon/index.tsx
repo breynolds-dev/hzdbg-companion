@@ -1,5 +1,3 @@
-"use client";
-
 export const NoResultsIcon = ( props: React.ComponentPropsWithoutRef<"svg"> ) => {
   return (
     <svg

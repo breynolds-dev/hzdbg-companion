@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components";
+import { Button } from "@/components/Button";
 
 import { navigationItems } from "../constants";
 import { NavigationGroup } from "../NavigationGroup";

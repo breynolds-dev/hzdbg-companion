@@ -1,9 +1,6 @@
 "use client";
 
-import {
-  Header,
-  MainNavigation,
-} from "@/components";
+import { Header } from "@/components/Header";
 import {
   Dialog,
   DialogBackdrop,
@@ -13,6 +10,8 @@ import {
 import { motion } from "framer-motion";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useRef } from "react";
+
+import { MainNavigation } from "../MainNavigation";
 
 export const MobileNavigationDialog = ( {
   close,

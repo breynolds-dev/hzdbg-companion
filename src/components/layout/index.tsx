@@ -1,11 +1,9 @@
 "use client";
 
-import {
-  Footer,
-  Header,
-  Logo,
-  MainNavigation,
-} from "@/components";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { Logo } from "@/components/Logo";
+import { MainNavigation } from "@/components/Navigation";
 import {
   type Section,
   SectionProvider,

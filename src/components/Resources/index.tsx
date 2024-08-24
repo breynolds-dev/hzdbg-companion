@@ -1,9 +1,7 @@
 "use client";
 
-import {
-  GridPattern,
-  Heading,
-} from "@/components";
+import { GridPattern } from "@/components/GridPattern";
+import { Heading } from "@/components/Heading";
 import {
   ChatBubbleIcon,
   EnvelopeIcon,

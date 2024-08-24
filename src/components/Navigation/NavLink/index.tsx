@@ -1,6 +1,6 @@
 "use client";
 
-import { Tag } from "@/components";
+import { Tag } from "@/components/Tag";
 import clsx from "clsx";
 import Link from "next/link";
 

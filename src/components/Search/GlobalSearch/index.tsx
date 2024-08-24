@@ -1,6 +1,10 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
+import {
+  Suspense,
+  useEffect,
+  useState,
+} from "react";
 
 import { useSearchProps } from "../hooks";
 import { SearchDialog } from "../SearchDialog";
