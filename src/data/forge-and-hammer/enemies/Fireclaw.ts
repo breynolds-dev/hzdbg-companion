@@ -1,4 +1,4 @@
-import { Enemy } from "@/data/types";
+import { Enemy, PLAYER_COUNT } from "@/data/types";
 
 export const Fireclaw: Enemy = {
   armor: 1,
@@ -9,6 +9,7 @@ export const Fireclaw: Enemy = {
   icon: "image.jpg",
   id: "6bf8676b-798d-41d1-afb8-ef9f8acd582b",
   name: "Fireclaw",
+  playerCount: PLAYER_COUNT.All,
   salvage: 2,
   specialRules: [],
 };

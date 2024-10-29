@@ -1,4 +1,4 @@
-import { Enemy } from "@/data/types";
+import { Enemy, PLAYER_COUNT } from "@/data/types";
 
 export const Sawtooth: Enemy = {
   armor: 2,
@@ -24,6 +24,7 @@ export const Sawtooth: Enemy = {
   icon: "sawtooth",
   id: "fcd749df-90a4-4866-93a2-94f27e57b7b9",
   name: "Sawtooth",
+  playerCount: PLAYER_COUNT.All,
   salvage: 2,
   specialRules: [
     {

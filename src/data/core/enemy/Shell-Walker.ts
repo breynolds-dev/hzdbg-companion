@@ -1,4 +1,4 @@
-import { Enemy } from "@/data/types";
+import { Enemy, PLAYER_COUNT } from "@/data/types";
 
 export const ShellWalker: Enemy = {
   armor: 2,
@@ -31,6 +31,7 @@ export const ShellWalker: Enemy = {
   icon: "shellWalker",
   id: "4b555f33-bf81-4011-b5f9-9ce521e99dc3",
   name: "Shell-Walker",
+  playerCount: PLAYER_COUNT.All,
   salvage: 3,
   specialRules: [
     {

@@ -1,4 +1,4 @@
-import { UUID } from "./Common";
+import { PLAYER_COUNT, UUID } from "./Common";
 
 export interface Component {
   damageValue: number,
@@ -22,6 +22,8 @@ export interface Enemy {
   icon: string;
   id: UUID;
   name: string;
+  playerCount: PLAYER_COUNT;
   salvage: number;
   specialRules: SpecialRules[];
+  structureThresholds?: number[];
 }

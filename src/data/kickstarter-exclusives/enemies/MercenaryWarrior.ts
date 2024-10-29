@@ -1,4 +1,4 @@
-import { Enemy } from "@/data/types";
+import { Enemy, PLAYER_COUNT } from "@/data/types";
 
 export const MercenaryWarrior: Enemy = {
   armor: 1,
@@ -9,6 +9,7 @@ export const MercenaryWarrior: Enemy = {
   icon: "image.jpg",
   id: "6bf8676b-798d-41d1-afb8-ef9f8acd582b",
   name: "Mercenary Warrior",
+  playerCount: PLAYER_COUNT.All,
   salvage: 2,
   specialRules: [],
 };

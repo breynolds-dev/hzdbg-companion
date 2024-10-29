@@ -1,4 +1,4 @@
-import { Enemy } from "@/data/types";
+import { Enemy, PLAYER_COUNT } from "@/data/types";
 
 export const CultistHeavy: Enemy = {
   armor: 1,
@@ -9,6 +9,7 @@ export const CultistHeavy: Enemy = {
   icon: "image.jpg",
   id: "7052dd7a-f689-4f6a-a561-59876f98ba29",
   name: "Cultist Heavy",
+  playerCount: PLAYER_COUNT.All,
   salvage: 2,
   specialRules: [],
 };

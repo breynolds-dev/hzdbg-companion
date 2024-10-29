@@ -1,4 +1,4 @@
-import { Enemy } from "@/data/types";
+import { Enemy, PLAYER_COUNT } from "@/data/types";
 
 export const Strider: Enemy = {
   armor: 1,
@@ -17,6 +17,7 @@ export const Strider: Enemy = {
   icon: "strider",
   id: "6f10fcb3-3c1a-469f-9981-a6cea0b517ff",
   name: "Strider",
+  playerCount: PLAYER_COUNT.All,
   salvage: 1,
   specialRules: [
     {

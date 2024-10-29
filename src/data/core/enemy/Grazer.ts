@@ -1,4 +1,4 @@
-import { Enemy } from "@/data/types";
+import { Enemy, PLAYER_COUNT } from "@/data/types";
 
 export const Grazer: Enemy = {
   armor: 1,
@@ -24,6 +24,7 @@ export const Grazer: Enemy = {
   icon: "grazer",
   id: "683b1135-2e5d-4b6d-a5e8-1f3bf2ad3824",
   name: "Grazer",
+  playerCount: PLAYER_COUNT.All,
   salvage: 1,
   specialRules: [],
 };

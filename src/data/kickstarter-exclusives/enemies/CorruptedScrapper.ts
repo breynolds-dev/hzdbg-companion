@@ -1,4 +1,4 @@
-import { Enemy } from "@/data/types";
+import { Enemy, PLAYER_COUNT } from "@/data/types";
 
 export const CorruptedScrapper: Enemy = {
   armor: 1,
@@ -9,6 +9,7 @@ export const CorruptedScrapper: Enemy = {
   icon: "image.jpg",
   id: "44b4ca94-ef58-4f17-b4f8-30f17c52738e",
   name: "Corrupted Scrapper",
+  playerCount: PLAYER_COUNT.All,
   salvage: 2,
   specialRules: [],
 };
