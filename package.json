@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "docker": "docker build -t hzdbg-companion-docker .",
+    "docker:build": "docker build -t hzdbg-companion-docker .",
+    "docker:run": "docker run -p 3000:3000 hzdbg-companion-docker",
     "cz": "git-cz",
     "commitlint:check": "npx commitlint --from HEAD1 --to HEAD --verbose",
     "commitlint": "commitlint -e $GIT_PARAMS",
