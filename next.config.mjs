@@ -19,7 +19,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: "export",
+  output: "standalone",
   pageExtensions: [
     "js",
     "jsx",
