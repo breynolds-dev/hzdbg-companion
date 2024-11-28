@@ -12,7 +12,7 @@ export const HighlightQuery = ( {
   return (
     <Highlighter
       autoEscape
-      highlightClassName="underline bg-transparent text-emerald-500"
+      highlightClassName="underline bg-transparent text-sky-500"
       searchWords={[ query ]}
       textToHighlight={text}
     />

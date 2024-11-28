@@ -48,7 +48,7 @@ export const SearchResult = ( {
     >
       <div
         aria-hidden="true"
-        className="text-sm font-medium text-zinc-900 group-aria-selected:text-emerald-500 dark:text-white"
+        className="text-sm font-medium text-zinc-900 group-aria-selected:text-sky-500 dark:text-white"
         id={`${id}-title`}
       >
         <HighlightQuery

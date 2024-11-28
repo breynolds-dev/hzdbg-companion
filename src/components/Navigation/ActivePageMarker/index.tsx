@@ -26,7 +26,7 @@ export const ActivePageMarker = ( {
           delay: 0.2,
         },
       }}
-      className="absolute left-2 h-6 w-px bg-emerald-500"
+      className="absolute left-2 h-6 w-px bg-sky-500"
       exit={{ opacity: 0 }}
       initial={{ opacity: 0 }}
       layout

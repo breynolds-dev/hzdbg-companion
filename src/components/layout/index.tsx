@@ -15,7 +15,7 @@ import { usePathname } from "next/navigation";
 export function Layout( {
   allSections,
   children,
-}: {
+} : {
   allSections: Record<string, Section[]>
   children: React.ReactNode
 } ) {
@@ -38,7 +38,7 @@ export function Layout( {
               </Link>
             </div>
             <Header />
-            <MainNavigation className="hidden lg:mt-10 lg:block" />
+            <MainNavigation className="hidden lg:mt-5 lg:block" />
           </div>
         </motion.header>
         <div className="relative flex h-full flex-col px-4 pt-14 sm:px-6 lg:px-8">
