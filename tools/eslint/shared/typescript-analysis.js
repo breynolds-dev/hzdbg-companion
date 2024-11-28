@@ -13,7 +13,6 @@ module.exports = {
       ],
       rules: {
         '@typescript-eslint/no-for-in-array': 'error',
-        '@typescript-eslint/no-throw-literal': 'warn',
         '@typescript-eslint/prefer-nullish-coalescing': 'warn',
         '@typescript-eslint/prefer-optional-chain': 'warn',
       },

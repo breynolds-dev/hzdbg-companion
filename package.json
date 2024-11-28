@@ -7,16 +7,17 @@
     "docker:build": "docker build -t hzdbg-companion-docker .",
     "docker:run": "docker run -p 3000:3000 hzdbg-companion-docker",
     "cz": "git-cz",
-    "commitlint:check": "npx commitlint --from HEAD1 --to HEAD --verbose",
     "commitlint": "commitlint -e $GIT_PARAMS",
+    "commitlint:check": "npx commitlint --from HEAD1 --to HEAD --verbose",
     "dev": "next dev",
+    "lint": "next lint",
     "lint:fix": "next lint --fix",
     "lint:strict": "next lint '*/**/*.{js,jsx,ts,tsx}'",
-    "lint": "next lint",
     "prepare": "husky",
     "prettier": "prettier --write */**/*.{json,css,md}",
     "start": "next dev",
-    "start:production": "next start"
+    "start:production": "next start",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@algolia/autocomplete-core": "1.17.4",

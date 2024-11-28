@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 import nextMDX from "@next/mdx";
 
 import { recmaPlugins } from "./src/mdx/recma.mjs";

@@ -99,7 +99,6 @@ module.exports = {
     "no-multi-assign": "warn",
     "no-new": "warn",
     "no-new-func": "warn",
-    "no-new-object": "warn",
     "no-new-symbol": "error",
     "no-obj-calls": "warn",
     "no-octal": "warn",
