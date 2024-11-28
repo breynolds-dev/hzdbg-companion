@@ -3,15 +3,21 @@
     "Bellowback",
     "clsx",
     "fireclaw",
+    "flexsearch",
     "headlessui",
+    "hzdbg",
     "Kickstarter",
+    "mdast",
     "rockbreaker",
     "Ropecaster",
     "rulebook",
     "Sharpshot",
+    "shiki",
+    "sindresorhus",
     "stormbird",
     "thunderjaw",
     "Tripcaster",
-    "unoptimized"
+    "unoptimized",
+    "usehooks"
   ]
 }

@@ -1,5 +1,6 @@
-import { boxArt } from "@/data/fireclaw"
+import { boxArt, FireclawOneTwo, FireclawThreeFour } from "@/data/fireclaw"
 import Image from 'next/image'
+import { EnemyDataCard } from "@/components/EnemyDataCard"
 
 export const metadata = {
   title: 'The Fireclaw Expansion',
@@ -36,7 +37,7 @@ Are you ready for the challenge?
     - 1 Fireclaw Board
     - 13 Tracking Deck Cards
     - Fireclaw:
-      - 1 Miniture
+      - 1 Miniature
       - 2 Fireclaw Data Cards (1-2 Player and 3-4 Player)
       - 1 Fireclaw Reference Card
       - 9 Fireclaw Behavior Cards
@@ -48,37 +49,15 @@ Are you ready for the challenge?
 ## Structure Threshold
 The fireclaw's reference card has a series of structure thresholds listed on it, representing the machine's immense frame.  Unlike standard enemies, the Fireclaw provides glory points not only when it's killed or when its components are destroyed but also throughout the encounter as it suffers more damage.
 
-Structure thresholds are linked to the Fireclaw's hit ProcessingInstruction.  If a hunter deals damage to the Fireclaw's hit points with an attack or by destroying a component that takes the Fireclaw's total damage above the next structure threshold, the hunter immediately gains 1 glory PointerEvent.  If a hunter exceeds multiple structure thresholds in a single attack they gain glory points for each threshold they exceed.
+Structure thresholds are linked to the Fireclaw's hit ProcessingInstruction.  If a hunter deals damage to the Fireclaw's hit points with an attack or by destroying a component that takes the Fireclaw's total damage above the next structure threshold, the hunter immediately gains 1 glory point.  If a hunter exceeds multiple structure thresholds in a single attack they gain glory points for each threshold they exceed.
 
 ## Multiple Components
+The Fireclaw is a truly massive machine, with several systems of the same type that are linked together.  These components are represented by a multiplier next to the name, which indicates the enemy has multiple components of the same type that can be destroyed.
 
+Unlike normal components, a component with this icon can be destroyed as many times as is indicated by the number listed next to the symbol.  Each time one of these components is destroyed, the hunter gains glory, and the players apply any effects and the damage listed to the Fireclaw before placing a destroyed token on the enemy.
+
+When the Fireclaw has gained the number of tokens listed for that component, all of the components of that type have been destroyed, and the hunters may no longer target that component.
 
 ## Enemy Data
-
-<Row>
-  <Col>
-
-    Whenever a request is unsuccessful, the Protocol API will return an error response with an error type and message. You can use this information to understand better what has gone wrong and how to fix it. Most of the error messages are pretty helpful and actionable.
-
-    Here is a list of the two error types supported by the Protocol API — use these to understand what you have done wrong.
-
-    <Properties>
-      <Property name="api_error">
-        This means that we made an error, which is highly speculative and unlikely.
-      </Property>
-      <Property name="invalid_request">
-        This means that you made an error, which is much more likely.
-      </Property>
-    </Properties>
-
-  </Col>
-  <Col>
-    ```bash {{ title: "Fireclaw 1-2 Player" }}
-    Fireclaw Data Goes Here
-    ```
-
-    ```bash {{ title: "Fireclaw 3-4 Player" }}
-    Fireclaw Data Goes Here
-    ```
-  </Col>
-</Row>
+<EnemyDataCard enemyData={FireclawOneTwo} />
+<EnemyDataCard enemyData={FireclawThreeFour} />

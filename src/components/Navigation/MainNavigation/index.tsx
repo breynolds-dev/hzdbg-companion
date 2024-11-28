@@ -10,9 +10,7 @@ export const MainNavigation = ( props: React.ComponentPropsWithoutRef<"nav"> ) =
   return (
     <nav {...props}>
       <ul role="list">
-        <TopLevelNavItem href="/">API</TopLevelNavItem>
-        <TopLevelNavItem href="#">Documentation</TopLevelNavItem>
-        <TopLevelNavItem href="#">Support</TopLevelNavItem>
+        <TopLevelNavItem href="#">Settings</TopLevelNavItem>
         {navigationItems.map( ( group, groupIndex ) => (
           <NavigationGroup
             className={groupIndex === 0 ? "md:mt-0" : ""}
